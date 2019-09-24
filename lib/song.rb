@@ -6,7 +6,6 @@ attr_accessor :artist, :name
   def initialize(name)
     @name = name
     save
-
   end
   
   def save
