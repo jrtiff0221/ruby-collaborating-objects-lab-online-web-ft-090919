@@ -33,7 +33,7 @@ attr_accessor :name
   end
    
   def print_songs(songs)
-     songs.each
+     puts songs.collect { |song| song.name }
   end
 
 end
