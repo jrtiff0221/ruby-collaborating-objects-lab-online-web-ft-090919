@@ -21,10 +21,10 @@ attr_accessor :artist, :name
     artist_name, song_name = file.split("-")
     puts song_name
     song = Song.new(song_name)
-    artist = self.artist_name(artist_name)
+    artist = artist_name(artist_name)
   end
   
-  def self.artist_name(name)
+  def artist_name(name)
     Artist.find_or_create_by_name(name)
   end
 
