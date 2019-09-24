@@ -29,11 +29,9 @@ attr_accessor :name
       Artist.new(name)
     else @@all.find {|artist|artist.name = name}
     end
-
   end
    
   def print_songs
      puts songs.collect { |song| song.name }
   end
-
 end
