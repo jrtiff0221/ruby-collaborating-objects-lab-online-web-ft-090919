@@ -18,6 +18,7 @@ attr_accessor :artist, :name
   
  
   def self.new_by_filename(filename)
+    
    
   
 
