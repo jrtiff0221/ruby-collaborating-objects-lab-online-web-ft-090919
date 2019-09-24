@@ -32,7 +32,7 @@ attr_accessor :name
 
   end
    
-  def print_songs(songs)
+  def print_songs
      puts songs.collect { |song| song.name }
   end
 
