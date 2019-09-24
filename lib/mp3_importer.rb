@@ -7,10 +7,12 @@ class MP3Importer
   end
     
   def files
-    Dir.chdir(@path)
-    filename = Dir.glob("*.mp3")
-    
-  end
+    dir_files = Dir[path + "/*mp3"]
+     mp3_files = []
+     dir_files.each do |file|
+       mp3_files << file.split("/").last 
+      end
+      mp3_files
     
   
 end
