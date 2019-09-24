@@ -16,7 +16,8 @@ attr_accessor :artist, :name
     @@all
   end
   
-  def self.new_by_filename
+  def self.new_by_filename(file)
+    be
     
   end
     
