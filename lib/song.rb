@@ -18,7 +18,8 @@ attr_accessor :artist, :name
   
   def self.new_by_filename(file)
     artist_name, song_name = file.split("-")
-    song = Song.new(song_name)
+    
+    song = Song.new(song_name.split(".mp3").first)
     song.artist = Artist.find_or_create_by_name(artist_name)
   end
     
